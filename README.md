@@ -2,7 +2,7 @@
 
 纯 Web 端的 **3D 数学立体几何切割与投影可视化工具**。从基本解析立体到 Marching Cubes 隐式等值面，从平面裁剪到真正的 CSG 布尔实体，再到三视图投影，全部在浏览器本地完成，不依赖后端。
 
-**在线体验：** https://lyc-000.github.io/geometry-lab/
+**目标发布地址：** https://lyc-000.github.io/geometry-lab/（GitHub Pages 自动部署工作流已就绪；推送 `main` 分支后生效）
 
 > 首次访问会看到新手引导，可以选择一个引导示例直接开始；之后可以随时从右上角“使用指南”重新打开。
 
@@ -244,9 +244,9 @@ public/                        favicon、OG 图、manifest、robots、sitemap
 
 ## 公开发布
 
-### 在线站点
+### GitHub Pages（自动部署已配置）
 
-- 地址：https://lyc-000.github.io/geometry-lab/
+- 目标地址：https://lyc-000.github.io/geometry-lab/（需将代码推送到 GitHub 仓库后生效）
 - 托管：GitHub Pages；构建产物为纯静态文件，无服务器、无用户数据上传。
 - 自动部署：`.github/workflows/deploy.yml` 在 `main` 分支 push 后使用 Node 22 执行 `npm ci` 与 `npm run build`，并将 `dist/` 发布到 Pages。
 - 子路径：工作流会注入 `VITE_BASE_PATH=/${repository-name}/`；`vite.config.ts` 读取该变量设置 Vite `base`。
