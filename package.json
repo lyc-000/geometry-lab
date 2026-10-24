@@ -1,0 +1,49 @@
+{
+  "name": "geometry-cut-studio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "纯 Web 端 3D 数学立体几何切割与三视图投影实验台（CSG / Clipping / Marching Cubes）",
+  "type": "module",
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "scripts": {
+    "dev": "node scripts/vite-runner.mjs --host 127.0.0.1 --port 4317",
+    "build": "tsc --noEmit && node scripts/vite-runner.mjs build",
+    "preview": "node scripts/vite-runner.mjs preview --host 127.0.0.1 --port 4318",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@radix-ui/react-dialog": "^1.1.15",
+    "@radix-ui/react-select": "^2.2.6",
+    "@radix-ui/react-slider": "^1.6.1",
+    "@radix-ui/react-switch": "^1.4.1",
+    "@radix-ui/react-toast": "^1.2.15",
+    "@radix-ui/react-tooltip": "^1.2.8",
+    "@react-three/drei": "10.5.0",
+    "@react-three/fiber": "9.2.0",
+    "clsx": "^2.1.1",
+    "isosurface": "1.0.0",
+    "katex": "^0.19.1",
+    "lucide-react": "^0.468.0",
+    "mathjs": "15.2.0",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "three": "0.180.0",
+    "three-bvh-csg": "0.0.18",
+    "three-mesh-bvh": "0.9.16",
+    "zustand": "^5.0.16"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.11",
+    "@types/katex": "^0.16.7",
+    "@types/node": "^22.15.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "@types/three": "0.180.0",
+    "@vitejs/plugin-react": "4.6.0",
+    "tailwindcss": "^4.1.11",
+    "typescript": "~5.8.3",
+    "vite": "^6.4.5"
+  }
+}

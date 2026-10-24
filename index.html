@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="zh-CN" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="icon" type="image/png" sizes="192x192" href="./icon-192.png" />
+    <link rel="apple-touch-icon" href="./icon-192.png" />
+    <link rel="manifest" href="./site.webmanifest" />
+    <meta name="theme-color" content="#080d12" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="application-name" content="剖物 · Geometry Lab" />
+    <meta name="apple-mobile-web-app-title" content="剖物" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <title>剖物 · 3D 立体几何切割与三视图实验台 | Geometry Lab</title>
+    <meta
+      name="description"
+      content="免安装、免登录的纯 WebGL 立体几何实验台：打开即用的 3D 实体、隐式方程、平面剖切、three-bvh-csg 布尔切割与三视图投影。所有计算都在浏览器本地完成。"
+    />
+    <meta
+      name="keywords"
+      content="立体几何,3D 可视化,CSG,布尔运算,three-bvh-csg,Three.js,WebGL,三视图,投影,Marching Cubes,数学可视化,在线实验台"
+    />
+    <meta name="author" content="Geometry Lab" />
+    <link rel="canonical" href="https://lyc-000.github.io/geometry-lab/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="剖物 · Geometry Lab" />
+    <meta property="og:locale" content="zh_CN" />
+    <meta property="og:title" content="剖物 · 把立体几何，切开给你看" />
+    <meta
+      property="og:description"
+      content="免安装、免登录的 WebGL 立体几何实验台：剖切、CSG 布尔互切、三视图投影，所有计算都在浏览器本地完成。"
+    />
+    <meta property="og:url" content="https://lyc-000.github.io/geometry-lab/" />
+    <meta property="og:image" content="https://lyc-000.github.io/geometry-lab/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="剖物 · Geometry Lab 立体几何实验台" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="剖物 · 把立体几何，切开给你看" />
+    <meta
+      name="twitter:description"
+      content="免安装、免登录的 WebGL 立体几何实验台：剖切、CSG 布尔互切、三视图投影。"
+    />
+    <meta name="twitter:image" content="https://lyc-000.github.io/geometry-lab/og-image.png" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "剖物 · Geometry Lab",
+        "url": "https://lyc-000.github.io/geometry-lab/",
+        "description": "免安装、免登录的 WebGL 立体几何实验台：平面剖切、three-bvh-csg 布尔互切与三视图投影。",
+        "applicationCategory": "EducationalApplication",
+        "operatingSystem": "Any",
+        "browserRequirements": "Requires WebGL 2",
+        "inLanguage": "zh-CN",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "CNY"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>
+      <div style="padding: 32px; font-family: sans-serif; color: #e8f0f5; background: #080d12">
+        剖物 · Geometry Lab 需要 JavaScript 与 WebGL 2 才能运行。请在浏览器设置中启用 JavaScript 后刷新页面。
+      </div>
+    </noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

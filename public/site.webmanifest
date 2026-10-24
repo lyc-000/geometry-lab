@@ -1,0 +1,27 @@
+{
+  "name": "剖物 · Geometry Lab",
+  "short_name": "剖物",
+  "description": "纯 WebGL 的立体几何切割、CSG 布尔运算与三视图投影实验台。",
+  "lang": "zh-CN",
+  "dir": "ltr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#080d12",
+  "theme_color": "#080d12",
+  "categories": ["education", "graphics", "utilities"],
+  "icons": [
+    {
+      "src": "./icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

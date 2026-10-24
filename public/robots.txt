@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lyc-000.github.io/geometry-lab/sitemap.xml
